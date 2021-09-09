@@ -10,7 +10,7 @@ var grid = new Array(gridSize);
 let sketch = function(p) {
     p.setup = function(){
       p.createCanvas(canvasWidth, canvasHeight);
-      p.background(127);
+      p.background(0);
 
       for(let i = 0; i < gridSize; i++)
       {
@@ -26,7 +26,7 @@ let sketch = function(p) {
     }
 
     p.draw = function() {
-      p.background(0);
+      p.background(127);
       p.fill(0, 160, 160);
       console.log("aa");
       for(let i = 0; i < gridSize; i++)
