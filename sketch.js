@@ -7,7 +7,10 @@ var sizePerCell = canvasWidth / gridSize;
 
 var grid = new Array(gridSize);
 
-var randomFunction = (x) => { return random(x) };
+var randomFunction = (x) => {
+  console.log("random works")
+  return random(x);
+};
 
 let sketch = function(p) {
     p.setup = function(){
