@@ -42,33 +42,3 @@ let sketch = function(p) {
 new p5(sketch, 'exampleContainer');
 
 console.log("test");
-/*
-function setup() {
-  createCanvas(canvasWidth, canvasHeight);
-
-  for(let i = 0; i < gridSize; i++)
-  {
-    grid[i] = new Array(gridSize);
-    for(let j = 0; j < gridSize; j++)
-    {
-      grid[i][j] = new Cell(i, j, sizePerCell);
-      if(random() > 0.5) grid[i][j].isOpen = true;
-    }
-  }
-
-  fill(0, 160, 160);
-  noStroke();
-}
-
-function draw() {
-  background(0);
-
-  for(let i = 0; i < gridSize; i++)
-  {
-    for(let j = 0; j < gridSize; j++)
-    {
-      grid[i][j].DrawSelf();
-    }
-  }
-}
-//*/
