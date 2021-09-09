@@ -1,4 +1,3 @@
-
 class Cell
 {
   constructor(newX, newY, newWidth)

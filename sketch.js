@@ -12,6 +12,8 @@ let sketch = function(p) {
       p.createCanvas(canvasWidth, canvasHeight);
       p.background(0);
 
+      console.log();
+
       for(let i = 0; i < gridSize; i++)
       {
         grid[i] = new Array(gridSize);
