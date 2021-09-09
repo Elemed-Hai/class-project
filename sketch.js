@@ -28,7 +28,7 @@ let sketch = function(p) {
     p.draw = function() {
       p.background(0);
       p.fill(0, 160, 160);
-
+      console.log("aa");
       for(let i = 0; i < gridSize; i++)
       {
         for(let j = 0; j < gridSize; j++)
