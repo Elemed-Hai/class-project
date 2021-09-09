@@ -10,7 +10,7 @@ var grid = new Array(gridSize);
 let sketch = function(p) {
     p.setup = function(){
       p.createCanvas(canvasWidth, canvasHeight);
-      p.background(0);
+      p.background(127);
 
       for(let i = 0; i < gridSize; i++)
       {
@@ -36,7 +36,7 @@ let sketch = function(p) {
           grid[i][j].DrawSelf();
         }
       }
-      
+
     }
   };
 new p5(sketch, 'exampleContainer');
