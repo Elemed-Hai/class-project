@@ -13,9 +13,9 @@ class Cell
 
   }
 
-  DrawSelf()
+  DrawSelf(p)
   {
     if(this.isOpen)
-      rect(this.x * this.width, this.y * this.width, this.width, this.width);
+      p.rect(this.x * this.width, this.y * this.width, this.width, this.width);
   }
 }
