@@ -28,7 +28,7 @@ let sketch = function(p) {
     p.draw = function() {
       p.background(127);
       p.fill(0, 160, 160);
-      console.log("aa");
+
       for(let i = 0; i < gridSize; i++)
       {
         for(let j = 0; j < gridSize; j++)
@@ -36,6 +36,8 @@ let sketch = function(p) {
           grid[i][j].DrawSelf(p);
         }
       }
+      p.fill(255, 0, 0);
+      p.rect(0, 0, 10, 10);
 
     }
   };
