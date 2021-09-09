@@ -21,7 +21,7 @@ let sketch = function(p) {
         }
       }
 
-      p.fill(0, 160, 160);
+      p.fill(255);
       p.noStroke();
     }
 
