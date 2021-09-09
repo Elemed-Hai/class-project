@@ -18,7 +18,7 @@ let sketch = function(p) {
         for(let j = 0; j < gridSize; j++)
         {
           grid[i][j] = new Cell(i, j, sizePerCell);
-          if(random() > 0.5) grid[i][j].isOpen = true;
+          if(p.random() > 0.5) grid[i][j].isOpen = true;
         }
       }
 
