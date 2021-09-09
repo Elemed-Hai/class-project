@@ -2,12 +2,11 @@
 var canvasWidth = 400;
 var canvasHeight = canvasWidth;
 
-var gridSize = 50;
+var gridSize = 20;
 var sizePerCell = canvasWidth / gridSize;
 
-var grid = new Array(gridSize);
-
 let sketch = function(p) {
+    let grid = new Array(gridSize);
     p.setup = function(){
       p.createCanvas(canvasWidth, canvasHeight);
       p.background(0);
@@ -22,12 +21,12 @@ let sketch = function(p) {
         }
       }
 
+      p.fill(0, 160, 160);
       p.noStroke();
     }
 
     p.draw = function() {
-      p.background(127);
-      p.fill(0, 160, 160);
+      p.background(0);
 
       for(let i = 0; i < gridSize; i++)
       {
@@ -36,9 +35,6 @@ let sketch = function(p) {
           grid[i][j].DrawSelf(p);
         }
       }
-      p.fill(255, 0, 0);
-      p.rect(0, 0, 10, 10);
-
     }
   };
 new p5(sketch, 'exampleContainer');
