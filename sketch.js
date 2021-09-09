@@ -15,6 +15,7 @@ let sketch = function(p) {
   };
 new p5(sketch, 'container');
 
+console.log("test");
 /*
 function setup() {
   createCanvas(canvasWidth, canvasHeight);
