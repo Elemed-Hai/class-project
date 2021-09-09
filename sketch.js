@@ -22,12 +22,12 @@ let sketch = function(p) {
         }
       }
 
-      p.fill(0, 160, 160);
       p.noStroke();
     }
 
     p.draw = function() {
       p.background(0);
+      p.fill(0, 160, 160);
 
       for(let i = 0; i < gridSize; i++)
       {
