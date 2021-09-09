@@ -7,6 +7,8 @@ var sizePerCell = canvasWidth / gridSize;
 
 var grid = new Array(gridSize);
 
+var randomFunction = (x) => { return random(x) };
+
 let sketch = function(p) {
     p.setup = function(){
       p.createCanvas(canvasWidth, canvasHeight);
@@ -18,7 +20,7 @@ let sketch = function(p) {
         for(let j = 0; j < gridSize; j++)
         {
           grid[i][j] = new Cell(i, j, sizePerCell);
-          if(p.random() > 0.5) grid[i][j].isOpen = true;
+          if(randomFunction() > 0.5) grid[i][j].isOpen = true;
         }
       }
 
