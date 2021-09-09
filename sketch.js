@@ -13,7 +13,7 @@ let sketch = function(p) {
       p.background(0);
     }
   };
-new p5(sketch, 'container');
+new p5(sketch, 'exampleContainer');
 
 console.log("test");
 /*
